@@ -8,6 +8,6 @@ ReactDOM.render(
     <Hello />,
     document.getElementById("app")
 )
-let asd;
+let asd,dsa;
 console.log(asd);
-console.log(asd);
+console.log(dsa);
