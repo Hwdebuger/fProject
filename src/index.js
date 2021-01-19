@@ -1,4 +1,4 @@
-
+"use strict";
 class Hello extends React.Component {
   render() {
     return <h1>Hello, React</h1>;
@@ -117,4 +117,47 @@ arr.forEach(function (item, i, arr) {
 
 //-------------------------------------------------------------------
 //работа с массивами, конец 
+//-------------------------------------------------------------------
+
+
+//-------------------------------------------------------------------
+//работа с прототипами, начало 
+//-------------------------------------------------------------------
+const winWind_0 = {
+  winHeight: 100,
+  winWidth: 350,
+  winMethod: "mbOk",
+  printMsg: function () {
+    console.log("Test");
+  }
+};
+
+// создание оъекта с наследованием от "winWind"
+const minWind_0 = Object.create(winWind_0);
+
+
+const winWind_1 = {
+  winHeight: 100,
+  winWidth: 350,
+  winMethod: "mbOk",
+  printMsg: function () {
+    console.log("Test");
+
+  }
+
+};
+
+const minWind_1 = {
+  winHeight: 100,
+
+};
+//наследование от готового прототипа "wniWind"
+Object.setPrototypeOf(minWind_1, winWind_1);
+minWind_0.printMsg();
+minWind_1.printMsg();
+console.log(minWind_0);
+console.log(minWind_1);
+
+//-------------------------------------------------------------------
+//работа с прототипами, конец 
 //-------------------------------------------------------------------
