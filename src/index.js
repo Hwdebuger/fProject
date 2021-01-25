@@ -1,4 +1,4 @@
-//'use strict';
+'use strict';
 //class Hello extends React.Component {
 // render() {
 // return <h1>Hello, React</h1>;
@@ -162,7 +162,7 @@ console.log(minWind_1);
 
 */
 //------ test personalMoveDb add, начало
-
+/*
 let a, b, c;
 let numberOfFilms;
 const personalMoveDB =
@@ -198,7 +198,7 @@ const personalMoveDB =
 };
 
 numberOfFilms = personalMoveDB.start();
-// недоделал 20.01.21
+
 for (let seen = false, c = numberOfFilms; c > 0; c--) {
   a = prompt("Какой фильм Вы смотрели недавно?", "");
   if (a != null && a != "" && a.length < 40) { //если строка введина правильно
@@ -216,3 +216,23 @@ for (let seen = false, c = numberOfFilms; c > 0; c--) {
 }
 
 //------ test personalMoveDb add, конец
+*/
+
+
+//--------- динамическая типизация, начало
+//to String
+console.log(typeof(String("ss")));
+console.log(typeof(5+"ss")); // String + anytype = String
+
+//to Number
+console.log(typeof(Number("5")));
+console.log(typeof(+"5"));
+console.log(typeof(parseInt("3px",10)));
+
+//toBoolean
+console.log(typeof(Boolean("1")));
+console.log(typeof(!!"1"));
+
+
+
+//--------- динамическая типизация, конец
